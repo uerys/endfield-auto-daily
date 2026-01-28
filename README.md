@@ -1,4 +1,4 @@
-# Hoyolab Auto Daily Check In
+# Endfield Auto Daily Check In
 
 Today's check in status:
 [![If you see this text, chances are the automation hasn't run. Do your setup below!](../../actions/workflows/login.yml/badge.svg)](../../actions/workflows/login.yml)
@@ -8,7 +8,7 @@ Repository version:
 
 ## Table of Contents
 
-- [Getting your cookie](#getting-your-cookie)
+- [Getting your auth token](#getting-your-auth-token)
 - [Usage](#usage)
 - [Multiple Accounts](#multiple-accounts)
 - [Discord Webhook](#discord-webhook)
@@ -18,9 +18,9 @@ Repository version:
   - [Error not logged in](#error-not-logged-in)
   - [I have other issues](#i-have-other-issues)
 
-## Getting your cookie
+## Getting your auth token
 
-You have to check in manually first to get your cookie, follow these steps (click to open screenshot):
+You have to check in manually first to get your auth token, follow these steps (click to open screenshot):
 
 1. Open [SKPORT Arknights: Endfield Daily Sign In](https://game.skport.com/endfield/sign-in) and login if you haven't (obviously)
 
@@ -62,7 +62,7 @@ You have to check in manually first to get your cookie, follow these steps (clic
 5. <details>
    <summary>
       Insert name with <code>CRED</code> and secret with
-      <a href="#getting-your-cookie">your token</a>, then click Add secret. You can input as many accounts, separate it with a new line (Enter).
+      <a href="#getting-your-auth-token">your token</a>, then click Add secret. You can input as many accounts, separate it with a new line (Enter).
    </summary>
    <img width="801" height="427" alt="image" src="https://github.com/user-attachments/assets/8110e0d2-2c11-4870-bb95-01ec0d99942b" />
    </details>
@@ -82,13 +82,6 @@ You have to check in manually first to get your cookie, follow these steps (clic
 
 10. You're set! Hop on your game the next day and see if you got the rewards
 
-## Multiple Accounts
-
-<details>
-  <summary>To add other accounts, you can add another token in a new line like below.</summary>
-   <img width="801" height="427" alt="image" src="https://github.com/user-attachments/assets/8110e0d2-2c11-4870-bb95-01ec0d99942b" />
-</details>
-
 ## Discord Webhook
 
 You may use Discord webhook to send notifications to your channel!
@@ -105,18 +98,12 @@ You may use Discord webhook to send notifications to your channel!
 
 3. <details>
    <summary>You can edit the name and picture freely, then Copy Webhook URL</summary>
-   <img src="https://github.com/sglkc/hoyolab-auto-daily/assets/31957516/3df5b59c-edc9-4884-897c-9159e243598e" />
+   <img width="671" height="301" alt="image" src="https://github.com/user-attachments/assets/4d8fb873-b52f-4f83-8d14-f55246bc3104" />
    </details>
 
 4. <details>
    <summary>Create a new repository <em>variable</em> named <code>DISCORD_WEBHOOK</code> with value of the webhook URL</summary>
-   <img src="https://github.com/sglkc/hoyolab-auto-daily/assets/31957516/15b029ff-906d-472c-b356-ae9efed4477b" />
-   </details>
-
-5. <details>
-   <summary>(Optional) If you want to be tagged on check in, add `DISCORD_USER` variable with your Discord ID.</summary>
-   <img src="https://github.com/user-attachments/assets/995a4b18-4c22-4dcd-9a2e-90fac74079c1" />
-   <img src="https://github.com/user-attachments/assets/52dff051-abb4-4cc0-b834-685d49a06731" />
+   <img width="797" height="218" alt="image" src="https://github.com/user-attachments/assets/2d09e7a5-9fe0-4ddf-891b-a136b1bb02a4" />
    </details>
 
 6. You may trigger the check in manually and see if the messages got sent
@@ -136,4 +123,4 @@ It is still unknown whether automated daily log in is bannable for Arknights End
 
 ### I have other issues
 
-To the [Issues page](https://github.com/sglkc/hoyolab-auto-daily/issues)
+To the [Issues page](https://github.com/sglkc/endfield-auto-daily/issues)

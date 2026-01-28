@@ -20,8 +20,7 @@ jobs:
       - name: Check In
         run: node index.js
         env:
-          COOKIE: ${{ secrets.COOKIE }}
-          GAMES: ${{ vars.GAMES }}
+          CRED: ${{ secrets.CRED }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USER: ${{ secrets.DISCORD_USER }}
   workflow-keepalive:

@@ -2,7 +2,7 @@ name: Latest version
 
 on:
   schedule:
-    - cron: "0 18 * * *" # scheduled at 06:00 (UTC+8) everyday
+    - cron: "0 22 * * *" # scheduled at 06:00 (UTC+8) everyday
   workflow_dispatch:
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Fetch package.json from original repo
         run: |
           curl -o remote-package.json \
-               https://raw.githubusercontent.com/sglkc/hoyolab-auto-daily/master/package.json
+               https://raw.githubusercontent.com/sglkc/endfield-auto-daily/master/package.json
 
       - name: Compare versions
         env:
