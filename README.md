@@ -10,12 +10,10 @@ Repository version:
 
 - [Getting your auth token](#getting-your-auth-token)
 - [Usage](#usage)
-- [Multiple Accounts](#multiple-accounts)
 - [Discord Webhook](#discord-webhook)
 - [FAQ](#faq)
   - [Is this safe?](#is-this-safe)
   - [How to update my (fork) repository version?](#how-to-update-my-fork-repository-version)
-  - [Error not logged in](#error-not-logged-in)
   - [I have other issues](#i-have-other-issues)
 
 ## Getting your auth token
@@ -31,16 +29,16 @@ You have to check in manually first to get your auth token, follow these steps (
 
 4. <details>
    <summary>For Chromium users, click on the Application tab. If not found, click on the arrow.</summary>
-   <img width="1121" height="448" alt="image" src="https://github.com/user-attachments/assets/eadfb030-f0b1-4fbb-86f1-1dcea6c61964" />
+   <img width="1400" height="428" alt="image" src="https://github.com/user-attachments/assets/ab0b03eb-da88-4106-8aa3-f9b6565c8836" />
    </details>
    <details>
    <summary>For Firefox/Gecko-based browsers, click on the Storage tab.</summary>
-   <img width="926" height="297" alt="image" src="https://github.com/user-attachments/assets/fb824970-f43e-4bd6-8d78-427ca01675df" />
+   <img width="1126" height="356" alt="image" src="https://github.com/user-attachments/assets/4f4c6491-4fd0-47f5-9fb0-5983acc80596" />
    </details>
 
 5. <details>
-   <summary>Just like the screenshot above, click on Local Storage and look for `SK_OAUTH_CRED_KEY`</summary>
-   <img width="1212" height="801" alt="image" src="https://github.com/user-attachments/assets/8b4e1158-3914-448c-93fb-9759e1c28717" />
+   <summary>Just like the screenshot above, click on Local Storage and look for <code>SK_OAUTH_CRED_KEY</code> and <code>SK_TOKEN_CACHE_KEY</code>. Copy both!</summary>
+   <img width="1400" height="428" alt="image" src="https://github.com/user-attachments/assets/42b6bb60-dd98-4a50-b174-3b2d99491948" />
    </details>
 
 6. <details>
@@ -48,7 +46,7 @@ You have to check in manually first to get your auth token, follow these steps (
    <img width="861" height="170" alt="image" src="https://github.com/user-attachments/assets/e29ad0d1-0d40-408b-8fc4-ea0b0f8acfed" />
    </details>
 
-7. That's your auth token, keep it save and do NOT share it with anyone!
+7. That's your auth credentials and token, keep it save and do NOT share it with anyone!
 
 ## Usage
 
@@ -61,12 +59,20 @@ You have to check in manually first to get your auth token, follow these steps (
 
 5. <details>
    <summary>
-      Insert name with <code>CRED</code> and secret with
-      <a href="#getting-your-auth-token">your token</a>, then click Add secret. You can input as many accounts, separate it with a new line (Enter).
+      Insert both <code>SK_OAUTH_CRED_KEY</code> and <code>SK_TOKEN_CACHE_KEY</code> then click Add secret. You can input as many accounts, separate it with a new line (Enter).
    </summary>
-   <img width="801" height="427" alt="image" src="https://github.com/user-attachments/assets/8110e0d2-2c11-4870-bb95-01ec0d99942b" />
+  <img width="457" height="425" alt="image" src="https://github.com/user-attachments/assets/25c8cbee-160c-495a-b0e8-557840735965" />
+  <img width="457" height="426" alt="image" src="https://github.com/user-attachments/assets/bb53a94c-4106-4444-8cae-a158a82168f9" />
    </details>
 
+6. <details>
+   <summary>
+     Here is the example for multiple accounts and your environments should now look like this.
+   </summary>
+   <img width="421" height="430" alt="image" src="https://github.com/user-attachments/assets/89630067-3498-4991-b897-30ef98d9066b" />
+   <img width="802" height="212" alt="image" src="https://github.com/user-attachments/assets/c6d129a1-dfc6-4915-ac45-f96539e94ba3" />
+   </details>
+   
 7. <details>
    <summary>
       For the first day, you have to trigger this manually.
